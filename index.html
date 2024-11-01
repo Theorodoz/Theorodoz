@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Innovante</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"> <!-- Police Roboto -->
+    <style>
+        /* Styles supplémentaires pour la section À propos */
+        #about {
+            display: flex;
+            flex-direction: column; /* Colonne par défaut pour mobiles */
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background-color: #f9f9f9;
+            text-align: center; /* Centre le texte pour les petits écrans */
+        }
+
+        #about-content {
+            flex: 1; /* Permet de prendre l'espace disponible */
+            max-width: 600px; /* Limite la largeur du texte pour une meilleure lisibilité */
+            text-align: left; /* Alignement du texte à gauche */
+        }
+
+        #about img {
+            width: 150px; /* Largeur de l'image */
+            height: 150px; /* Hauteur de l'image */
+            border-radius: 50%; /* Arrondi pour faire un cercle */
+            object-fit: cover; /* S'assure que l'image couvre l'élément sans déformer le ratio d'aspect */
+            border: 5px solid #007BFF; /* Bordure autour de l'image */
+            margin-left: 20px; /* Ajoute de l'espacement à gauche de l'image */
+            margin-top: 20px; /* Ajoute un espacement en haut */
+        }
+
+        #about p {
+            font-size: 1.1rem; /* Augmente légèrement la taille de la police */
+            color: #333; /* Couleur du texte */
+        }
+
+        @media (min-width: 768px) {
+            #about {
+                flex-direction: row; /* Change en ligne sur écrans plus larges */
+                text-align: left; /* Alignement du texte à gauche */
+            }
+
+            #about img {
+                margin-left: 20px; /* Espacement à gauche de l'image */
+                margin-top: 0; /* Supprime l'espacement en haut */
+            }
+        }
+
+        /* Styles pour Typeform */
+        .typeform-widget {
+            width: 100%; /* Largeur du formulaire */
+            height: 500px; /* Hauteur du formulaire */
+        }
+    </style>
+</head>
+<body>
+    <!-- Bannière d'accueil -->
+    <header>
+        <div class="banner">
+            <h1>EcoTech Innovations</h1>
+            <p>We develop innovative solutions for a better future.</p>
+            <a href="#services" class="cta-button">Découvrez nos services</a>
+        </div>
+    </header>
+
+    <!-- À propos de nous -->
+    <section id="about">
+        <div id="about-content">
+            <h2>About us</h2>
+            <p>
+        We're a team passionate about technology and innovation. Our mission is to transform the world through revolutionary digital solutions.We're a team passionate about technology and innovation. Our mission is to transform the world through revolutionary digital solutions.</p>
+        </div>
+        <img src="images/theo.jpg" alt="Notre Équipe" />
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Web development</h3>
+                <p>We create modern, responsive websites to help you achieve your goals.</p>
+            </div>
+            <div class="service">
+                <h3>Mobile Applications</h3>
+                <p>Our mobile applications are designed to deliver an exceptional user experience.</p>
+            </div>
+            <div class="service">
+                <h3>Strategy Consulting</h3>
+                <p>We can help you define your digital strategy to maximize your impact.p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de cartes (ex. Destinations) -->
+    <section id="destinations">
+        <h2>Campuses</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+            </div>
+            <div class="card">
+                <img src="images/new-york.jpg" alt="New York">
+                <h3>New-York</h3>
+            </div>
+            <div class="card">
+                <img src="images/tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo</h3>
+            </div>
+            <div class="card">
+                <img src="images/londres.jpg" alt="Londres">
+                <h3>London</h3>
+            </div>
+            <div class="card">
+                <img src="images/sydney.jpg" alt="Sydney">
+                <h3>Sydney</h3>
+            </div>
+            <!-- Ajouter d'autres cartes ici si nécessaire -->
+        </div>
+    </section>
+
+    <!-- Témoignages -->
+    <section id="testimonials">
+        <h2>What our clients tells about us</h2>
+        <div class="testimonial-container">
+            <blockquote>
+                “EcoTech Innovations helped us boost our online presence with a tailor-made solution.”
+                <cite>— Jean Dupont, CEO of TechCorp</cite>
+            </blockquote>
+            <blockquote>
+                “A talented team that really understands the needs of startups like ours.”
+                <cite>— Marie Martin, Founder of GreenSolutions Corp</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Contact / Appel à l'action -->
+    <section id="contact">
+        <h2>Contact Us !! </h2>
+        <p>Ready to work together? Fill in the form below and we'll get back to you as soon as possible!</p>
+        
+        <!-- Intégration de Typeform -->
+        <div class="typeform-widget" data-tf-live=01JBKYZ635ZHF1H5A79EJQMBDM></div>
+        <script src="//embed.typeform.com/next/embed.js"></script>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/theo-rodoz-b09482332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/theorodoz/?hl=fr">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>Email: rodoztheo933@gmail.com</p>
+            </div>
+            <div class="sitemap">
+                <h3>Home</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#testimonials">Tesmimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
